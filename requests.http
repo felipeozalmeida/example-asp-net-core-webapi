@@ -1,0 +1,38 @@
+
+GET https://localhost:5001/weatherforecast HTTP/1.1
+
+
+
+GET https://localhost:5001/api/todoitems HTTP/1.1
+
+
+
+POST https://localhost:5001/api/todoitems HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "Task #3",
+  "isComplete": false,
+  "secret": "blabla"
+}
+
+
+
+GET https://localhost:5001/api/todoitems/1 HTTP/1.1
+
+
+
+PUT https://localhost:5001/api/todoitems/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Task #1",
+  "isComplete": true,
+  "secret": "blablabla2"
+}
+
+
+
+DELETE https://localhost:5001/api/todoitems/1 HTTP/1.1
